@@ -1,0 +1,71 @@
+\documentclass[9pt]{beamer}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Use roboto Font (recommended)
+\usepackage[sfdefault]{roboto}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Define where theme files are located. ('/styles')
+\usepackage{styles/fluxmacros}
+\usefolder{styles}
+% Use Flux theme v0.1 beta
+% Available style: asphalt, blue, red, green, gray 
+\usetheme[style=asphalt]{flux}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Extra packages for the demo:
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{ragged2e}
+\usepackage{schemabloc}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Informations
+
+\title[short title]{\underline{\Huge Implementation of LDPC codes}\\~\\ \Large IDP(EE2025) \\ \Large June 30, 2020}
+\author{\\ \underline{ \textbf{SHAIK MASTAN VALI}} \\ \underline{ \textbf{J\; PRABHATH LAKSHMINARAYANA}}\\ \underline{\textbf{K \;SRIKANTH}}\\}
+\institute{\textbf{\underline{\large Mentor}: Dr. Shashank Vatedka} \\ \textbf{\large INDIAN INSTITUTE OF TECHNOLOGY, HYDERABAD}}
+\date{June 30, 2020}
+\titlegraphic{overleaf.png}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{document}
+
+% Generate title page
+\titlepage
+
+\begin{frame}
+ \frametitle{Table of contents}
+ \tableofcontents
+\end{frame}
+
+\input{encoding/encoding }
+\input{AWGN/awgn}
+\input{BSC/bsc}
+\input{BEC/bec}
+
+\begin{frame}
+    \begin{alertblock} {References}
+    \begin{itemize}
+        \item Information theory, Inference and Learning Algorithms - David.J.C.McKaycv
+        \item  \href{https://nptel.ac.in/}{NPTEL}
+        \item \href{https://www.stanford.edu/}{www.stanford.edu}
+    \end{itemize}
+    \end{alertblock}
+\end{frame}
+
+\begin{frame}
+\noindent
+{\color{purple} \rule{\linewidth}{0.5mm} }
+\color{purple}
+\Huge{\centerline{The End}}
+\noindent
+{\color{purple} \rule{\linewidth}{0.5mm} }
+\end{frame}
+
+\end{document}
